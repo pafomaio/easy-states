@@ -116,6 +116,7 @@ public class FiniteStateMachineImplTest {
         Assertions.assertThat(stateMachine.getCurrentState()).isEqualTo(s1);
     }
 
+    
     @Test(expected = FiniteStateMachineException.class)
     public void whenEventHandlerThrowsException_thenShouldThrowFiniteStateMachineException() throws Exception {
         // Given
@@ -137,7 +138,7 @@ public class FiniteStateMachineImplTest {
         // Then
         // expected exception
     }
-
+	
     @Test
     public void whenNoRegisteredTransitionForTheFiredEvent_thenShouldNotChangeState() throws Exception {
         // Given

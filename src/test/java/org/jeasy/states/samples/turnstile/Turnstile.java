@@ -58,7 +58,7 @@ class Launcher {
         Set<State> states = new HashSet<>();
         states.add(locked);
         states.add(unlocked);
-
+        
         /*
          * Define FSM transitions
          */
